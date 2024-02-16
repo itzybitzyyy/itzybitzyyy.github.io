@@ -1,0 +1,252 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    line-height: 2rem;
+}
+
+
+
+header{
+    min-height: 100vh;
+    background: url(images/1.jpg) center/cover no-repeat fixed;
+    display: flex;
+}
+
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+}
+ 
+.navbar.fixed-navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 500;
+    transition: 0.3s ease;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 0.5rem;
+}
+
+.navbar-brand{
+    color: #fff;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+.navbar-brand span{
+    font-family: 'Sofia', sans-serif;
+    color: #FFB627;
+}
+
+.navbar-nav{
+    padding: 0.8rem 0 0.2rem 0;
+    text-align: center;
+}
+
+.navbar-nav a{
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.4rem 0.1rem;
+    letter-spacing: 3px;
+    transition: opacity 0.5s ease;
+}
+
+.navbar-nav a:hover{
+    opacity: 0.7;
+}
+
+.banner{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.banner-title span{
+    font-family: 'Sofia', sans-serif;
+    font-weight: 500px;
+    color: #FFB627;
+}
+.banner p{
+    padding: 1rem 0 2rem 0;
+    font-size: 1.8rem;
+    text-transform: none;
+    font-weight: 300;
+    word-spacing: 3px;
+}
+ 
+
+.title{
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.title h2{
+    font-size: 2.4rem;
+    font-family: 'Sofia', sans-serif;
+}
+
+.title p{
+    text-transform: uppercase;
+    padding: 0.6rem 0;
+    word-spacing: 5px;
+}
+
+.design{
+    padding: 4.5rem 0;
+}
+
+.design-content{
+    margin: 2rem 0;
+}
+
+img{
+    width: 100%;
+}
+
+.design-img{
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    margin-left: 55px;
+    display: block;
+}
+
+.design-img img{
+    transition:  all 0.5s ease;
+}
+
+.design-item:hover img{
+    transform: scale(1.2);
+}
+
+.design-title{
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+
+.blog{
+    background: #fff;
+    padding: 4.5rem 0;
+}
+.blog-content{
+    margin: 2rem 0;
+}
+.blog-img{
+    position: relative;
+    top: 1px;
+    left: 10px;
+}
+
+.blog-text{
+    margin: 2.2rem 0;
+    padding: 0 1rem;
+    
+}
+.blog-text span{
+    display: block;
+    padding-bottom: 0.5rem;
+    font-family: 'Sofia', sans-serif;
+}
+.blog-text h2{
+    padding: 1rem 0;
+    font-size: 1.65rem;
+    font-weight: 100px;
+}
+.blog-text p{
+    font-weight: 300;
+    font-size: 1.1rem;
+    padding-bottom: 1.2rem;
+}
+
+
+.about-content{
+    text-align: center;
+}
+
+.about-content img{
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.about-text{
+    font-size: 1.1rem;
+    padding: 0.6rem 0;
+    opacity: 0.8;
+}
+
+
+
+
+@media screen and (min-width: 540px){
+    .navbar-nav a{
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+    .banner-title{
+        font-size: 100px;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .navbar .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .design-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .design-item{
+        margin: 0;
+    }
+    .blog-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .blog-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .about-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .design-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
